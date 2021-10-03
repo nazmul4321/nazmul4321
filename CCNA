@@ -1,0 +1,70 @@
+-------------------------------Node-------------------------------
+1. A network node is a connection point that can receive, create, store or send data
+2. Network nodes are the physical pieces that make up a network
+3.. Any system or device connected to a network is also called a node.
+
+-------------------------------End Point-------------------------------
+
+1. An endpoint is any device that is physically an end point on a network.
+2. End point is the point from where typically a communication can be started or ended.
+3. Router Switches are intermediary devices.
+
+-------------------------------Client-------------------------------
+
+1. In computing, a client is a piece of computer hardware or software that accesses a service made available by a server as part of the client–server model of computer networks. (Wikipedia)
+
+2. Client that requests for a service and access servieces which is made accessable by a server. 
+
+-------------------------------Server -------------------------------
+
+A server is a computer program or device that provides a service to another computer program and its user
+
+-------------------------------Host -------------------------------
+A host (also known as "network host") is a computer or other device that communicates with other hosts on a network. Hosts on a network include clients and servers -- that send or receive data, services or applications.
+
+Hosts typically do not include intermediary network devices like switches and routers, which are instead often categorized as nodes. A node is also a broader term that includes anything connected to a network, while a host requires an IP address. In other words, all hosts are nodes, but network nodes are not hosts unless they require an IP address to function.
+
+-------------------------------Protocol-------------------------------
+1. A network protocol is an established set of rules that determine how data is transmitted between different devices in the same network. Essentially, it allows connected devices to communicate with each other, regardless of any differences in their internal processes, structure or design. (comptia)
+
+2. Set of rules that defines how to communicate between network devices.
+
+3. Set of rules that defines how computers communicate eachothers.
+
+4. A protocol is a set of rules that governs the communications between computers on a network.
+
+5. Protocol, in computer science, a set of rules or procedures for transmitting data between electronic devices, such as computers
+
+-------------------------------Port -------------------------------
+
+A port is identified for each transport protocol and address combination by a 16-bit unsigned number, known as the port number. The most common transport protocols that use port numbers are the Transmission Control Protocol (TCP) and the User Datagram Protocol (UDP).
+
+In computer networking, a port is a communication endpoint. At the software level, within an operating system
+
+Layer 4 (Transport Layer is also responsible for choosing port number )
+
+port number :  suppose you are sending a letter to your friend. There will be a letter box ofcourse outside of your friend house, The letter you are sending that is the applicaiton data, and the post box near to  your friend's house is the port number.
+
+------ Port Numbers ------
+
+Protocols	Name	Numbers
+FTP	Tcp	21
+SSH	Tcp	22
+TELNET	Tcp	23
+SMTP	Tcp	25
+DNS	TCP/UDP	53
+DHCP	UDP	67,68
+TFTP	UDP	69
+HTTP	TCP	80
+HTTPs	TCP	443
+POP3	TCP	110
+SNMP	UDP	161
+
+
+Go to the powershell and type
+
+netstat -n 
+note: -n is to show the numerical data.
+
+IP Address is like My address
+Port Number is like my post box number

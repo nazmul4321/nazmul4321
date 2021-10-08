@@ -68,3 +68,128 @@ note: -n is to show the numerical data.
 
 IP Address is like My address
 Port Number is like my post box number
+
+
+
+----------------- Elements of data transmission -----------------
+
+1. Source
+2. Sender
+3. Medium
+4. Receiver
+5. Destination
+
+----------------- Modem ----------------
+What is a modem? is it like router?
+Ans: No
+
+-Modulate the outgoing data from the computer
+-Demodulate the incoming data from the internet
+
+It actally modulates the outgoing data (Digital Signal) of the computer to analog signal
+and It also demodulates the incoming analog signal to digital signal.
+
+
+Suppose you have your phone, computer conncected to internet via your router.
+Just imagine,
+
+Your PC/Phone -----> Router -------> Modem (Modulation) ----------> Internet
+Your PC/Phone <----- Router <------- Modem (DeModulation) <---------- Internet
+
+Note: The router right now you are using at your home there is a built in switch inside of your router.(One Ethernet port is to  receive the internet and others are used to provide you direct connection through cable, and It also support wireless connection that is why useually you do not use the cable when you are using router at your home.)
+
+----------------- Data Transmission Speed----------------- 
+Amount of digital data that is moved from one place to another in a given time
+Or you can say that "Bandwidth"
+
+Narrow Band (45 - 300 bps)
+Voice Band (upto 9600 bps)
+Broadband (More than 1mbps)
+
+----------------- Data Transmission Mode (Direction of Data Communication)----------------- 
+1. [Unicast]
+
+- Sender to Receiver Communication
+-One to One
+
+-------Unicast Mode-------
+
+Simplex :(One Direction)		A ---------------> B 
+
+Half-Duplex :(One Direction at a time)	 A-------------> B or A <------------- B
+
+Full-Duplex: (Bidirectional at anytime)	 A <-------------> B 
+
+2. Multicast : Casting to a particular/ specific group
+3. Broadcast : Casting to all.
+
+
+--------Different Kinds ----------------------
+- Client Server Network
+- Peer to Peer Network
+- Hybrid Network (Mix of both)
+
+---------Network Topology---------
+
+-Network topology defines the layout, virtual shape, or structure of the network, not only physically but also logically.
+
+Network topology is the arrangement of the elements (links, nodes, etc.) of a communication network.
+
+
+HUB
+
+- Hub is considered not to be intelligent.
+Suppose you have a hub which got 4 ports and they are  connected to 4 devices. 
+Device 1 sends a packet through one port of hub, that means this data get copid and will be forwarded through other 3 ports of the HUB.
+-This incident not only creates security concern but also produce unnecessary traffic on the network that basically waste of bandwidht. 
+
+SWITCH
+
+- Switch is considered to be intelliegent, it has its mac address table.
+Unlike the hub it doesn't do broadcasting all the time, firstly, it checks on its mac address table then if the destination mac address matches with its table mac address then it forwards the traffic to its destination, if doesn't match then it does broadcasting. So data directed only  to the intendended port.
+-That reduces unnecessary traffic on the network.
+ 
+Points to be noted in your mind,
+
+1. HUBs and Switches are basically used to exchange data within local area networks.
+2. HUBs and L2 switches are not used to send traffic outside of a network.
+3. Router is the device that only works with IP addresses, and Router is used to send traffic outside to another network. 
+4. HUBs and Switches do not work at IP level. 
+5. When any device's traffic needs to travel outside of its own network then it uses the gateway address, and through that it passes out. 
+6. You create a local network with hubs and switches.
+7. You connect different networks with routers.
+
+
+Collision Domain Vs Broadcast Domain
+
+-------------- HUB --------------
+One collision domain
+One broadcast domain
+All nodes share the bandwidth of the network
+-------------- Switch -------------
+Seperate collision domain
+Creates a broadcast domain
+Gives every conversation the full bandwidth of the network
+
+*********** 4 Different Functions of Router ***********
+1. Inter Network Communication (Communicate between different networks)
+2. Path Selection (Select the path)
+3. Packet Switching (Each router examines and sends each IP packet individually — this is called packet switching.)
+4. Packet Filtering (Filter the packet like ACL)
+
+Broadcast Domain------------
+The area your broadcast can reach.
+Typically a LAN is one Boradcast Domain.
+
+Collision Domain------------
+CSMA/CD
+Carrier Sense Multiple Access /Collision Detection
+CSMA/CA (Carrier Sense Multiple Access/Collision Avoidance) 
+-simultaneous data transmissions collide with one another
+
+The algorithm of CSMA/CD is: When a frame is ready, the transmitting station checks whether the channel is idle or busy. If the channel is busy, the station waits until the channel becomes idle. If the channel is idle, the station starts transmitting and continually monitors the channel to detect collision.
+
+
+
+
+
